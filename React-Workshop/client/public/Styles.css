@@ -1,0 +1,231 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --accent-color: #A076F9;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: 'Belanosima', sans-serif;
+    overflow-x: hidden;
+}
+
+/*==========Navbar==========*/
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #101010;
+    color: white;
+    padding: 1rem;
+    z-index: 999;
+}
+
+nav .navbar-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav .navbar-container .navbar-left span {
+    font-size: 36px;
+}
+
+nav .navbar-container .navbar-right ul {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav .navbar-container .navbar-right ul li {
+    padding: 16px 32px;
+    background-color: #fff;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*==========Navbar End==========*/
+
+/*==========CC==========*/
+
+.component-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    height: 100vh;
+    position: relative;
+}
+
+.component-container .add-users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.component-container .component-header span {
+    font-size: 56px;
+}
+
+.component-container .add-users .component-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background-color: #000;
+    width: 350px;
+}
+
+.component-container .add-users .component-content form .input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.component-container .add-users .component-content form .input-field span {
+    font-size: 20px;
+    color: white;
+}
+
+.component-container .add-users .component-content form .input-field label {
+    font-size: 18px;
+    color: white;
+}
+
+.component-container .add-users .component-content form .input-field input {
+    font-size: 24px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+.component-container .add-users .component-content form button {
+    font-size: 18px;
+    margin-top: 1rem;
+    background-color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.component-container .view-users table{
+    margin-top: 2rem;
+    width: 800px;
+}
+
+.component-container .view-users table td{
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.component-container .view-users table td.btn-field{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.component-container .view-users table td.btn-field button{
+    background-color: transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.component-container .view-users table td.btn-field button:nth-child(1){
+    border: 2px solid goldenrod;
+}
+.component-container .view-users table td.btn-field button:nth-child(2){
+    border: 2px solid red;
+}
+
+.component-container .modal-overlay{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    z-index: 100;
+}
+
+.component-container .modal-overlay.active{
+    display: initial;
+}
+
+.component-container .edit-modal{
+    position: absolute;
+    display: none;
+    z-index: 105;
+}
+
+.component-container .edit-modal.active{
+    display: initial;
+}
+
+.component-container .edit-modal form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background-color: #000;
+    width: 350px;
+}
+
+.component-container .edit-modal form .input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.component-container .edit-modal form .input-field span {
+    font-size: 20px;
+    color: white;
+}
+
+.component-container .edit-modal form .input-field label {
+    font-size: 18px;
+    color: white;
+}
+
+.component-container .edit-modal form .input-field input {
+    font-size: 24px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+.component-container .edit-modal form button {
+    font-size: 18px;
+    margin-top: 1rem;
+    background-color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/*==========CC End==========*/
+
+/*==========Add Users==========*/
+
+
+/*==========Add Users End==========*/
+
